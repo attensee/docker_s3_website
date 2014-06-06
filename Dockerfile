@@ -9,4 +9,6 @@ VOLUME ["/website", "/config"]
 
 WORKDIR /website
 
-CMD s3_website push --config-dir /config --site /website --verbose
+ENTRYPOINT ["s3_website"]
+
+CMD ["--help"]
